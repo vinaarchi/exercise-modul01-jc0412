@@ -56,6 +56,7 @@ console.log(
  console.log ("_Input2 =" + meter + "km");
 */
 
+
 //no4
 // example : 1000 -> Rp. 1.000,00
 const price:string = "1000"
@@ -70,9 +71,9 @@ console.log(Intl.NumberFormat().format(price));
 //a code to remove the first occurrence of a given “search string” from a string
 // Example : string = “Hello world”, search string = “ell” → “Ho world”
 const kata: string = "Hello World";
-let remove: string = kata.replace('ell', '');
-console.log(remove);
+console.log(kata.replace ("ell", ""));
 
+// sebenernya ini simple, karena ell nya perlu cuma di replace aja dengan yang kosong, sudah pernah dijelasin sama pak aldi
 
 
 
@@ -145,7 +146,6 @@ switch(input){
         break;
     default:
         console.log(`${input} is a null`);
-        
 }
 // kalau pake gini apa boleh? 
 
