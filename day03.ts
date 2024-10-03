@@ -15,6 +15,9 @@ hrusnya untuk perkalian tabel, itu hrus tentukan dlu angka pasti, lalu tentukan 
 setelah itu pakai console.log(`${numbers} x ${i} = ${numbers * i}`)
 */
 
+
+
+
 //no2
 // (a code to check whther a string is a palindrome or not.) 
 //example : 'madam' -> palindrome
@@ -39,6 +42,8 @@ console.log((input2 == input3 ? "is palindrome" : "is not palindrome"));
 
 
 
+
+
 //no3
 // input : cm ke km, 1m = 100cm, 1km = 100000cm
 let _Input1 = 1;
@@ -57,6 +62,8 @@ console.log(
 */
 
 
+
+
 //no4
 // example : 1000 -> Rp. 1.000,00
 const price:string = "1000"
@@ -64,6 +71,8 @@ console.log(Intl.NumberFormat().format(price));
 
 //Intl.NumberFormat() : membuat format mata uang rupiah
 // ini masih kurang Rp sama ,00
+
+
 
 
 
@@ -77,6 +86,9 @@ console.log(kata.replace ("ell", ""));
 
 
 
+
+
+
 //no6
 //Write a code to capitalize the first letter of each word in a string
 //Example : “hello world” → “Hello World”
@@ -84,7 +96,15 @@ console.log(kata.replace ("ell", ""));
 
 
 
+
+
 //no7
+/**
+ a code to swap the case of each character from string
+○ Example : ‘The QuiCk BrOwN Fox’ -> ‘ tHE qUIcK bRoWn fOX’
+
+ */
+
 
 
 
@@ -94,6 +114,10 @@ console.log(kata.replace ("ell", ""));
 
 let _num1:number = 42;
 let _num2:number = 27;
+
+console.log(Math.max(42, 27));
+
+
 
 
 
