@@ -10,8 +10,16 @@ for (let i = 0; i <= 10; i++){
     console.log(`${numbers} x ${i} = ${numbers * i}`);
 }
 
+// contoh dari pak aldi
+/*
+const value:number = 9;
 
-
+let output: string = ``;
+for (let n:number = 1; n<= 10; n++){
+output = output + `${value} x ${n}\n`;
+console.log(output);
+}
+*/
 
 /* 
 hrusnya untuk perkalian tabel, itu hrus tentukan dlu angka pasti, lalu tentukan juga angka limit yang akan di kalikan
@@ -21,15 +29,29 @@ setelah itu pakai console.log(`${numbers} x ${i} = ${numbers * i}`)
 
 
 
+
 //no2
 // (a code to check whther a string is a palindrome or not.) 
 //example : 'madam' -> palindrome
-// salah nulis cara, dibenerin lgi nnti
-let input2 = ("Enter String")
-let input3 = ""
+let panjangKata = "madam";
+let isPalindrome = "";
 
+// karena butuh tau kata itu termasuk palindrome atau bukan, kita buatkan loop yang buat ngasih tau ini benar atau salah
 
+for (let i = panjangKata.length - 1; i >= 0; i--){
+    isPalindrome = isPalindrome + panjangKata [i]; 
+    /* jangan lupa selalu pake [i] untuk menandakkan akan diambil dari mana nya karena itu akan jadi rumus yang
+    akan dipakai sama isPalindrome
+    */
+    console.log(isPalindrome);
+}
 
+if (isPalindrome === panjangKata){
+    console.log(` ${panjangKata} is a palindrome`);
+}else{
+    console.log(` ${panjangKata} is not a palindrome`);
+    
+}
 
 
 
@@ -83,7 +105,7 @@ console.log(kata.replace ("ell", ""));
 //Example : “hello world” → “Hello World”
 
 
-
+    
 
 
 
@@ -103,9 +125,8 @@ console.log(kata.replace ("ell", ""));
 
 let _num1:number = 42;
 let _num2:number = 27;
-
-console.log(Math.max(42, 27));
-
+const _result = Math.max (_num1, _num2)
+console.log(_result);
 
 
 
@@ -151,16 +172,16 @@ let result:number = "";
 let input = "1"
 
 switch(input){
-    case input = "1":
+    case "1":
         console.log(`${input} is a string`);
         break;
-    case input = "2":
+    case "2":
         console.log(`${input} is a number`);
         break;
     default:
         console.log(`${input} is a null`);
 }
-// kalau pake gini apa boleh? 
+// coba nnti pakein if dlu
 
 
 
@@ -171,5 +192,5 @@ switch(input){
 const example1:string = "An apple a day keeps the doctor away"
 console.log(example1.replaceAll("a", "*"));
 
-//pertanyaan nya, kalau ada huruf besar, gimana jadinya??
+//pertanyaan nya, kalau ada huruf besar, gimana jadinya?? coba nnti jadiin 
 
