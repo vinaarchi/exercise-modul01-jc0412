@@ -68,10 +68,13 @@ console.log(
 
 
 //no4 // blm selesai
+//a code to format number as currency (IDR)
 // example : 1000 -> Rp. 1.000,00
-const price:string = "1000"
+let price = "1000";
+let result1 = price.toLocaleString 
 
-console.log(Intl.NumberFormat().format(price));
+
+//console.log(Intl.NumberFormat().format(price));
 
 //Intl.NumberFormat() : membuat format mata uang rupiah
 // ini masih kurang Rp sama ,00
@@ -186,12 +189,14 @@ switch(input){
 
 
 
-//no11 / belum selsai
+//no11 
 //write a code to change every letter a into * from a string of input
 //example : An apple a day keeps the doctor away -> *n *pple * d*y keeps the doctor *w*y
 
-const example1:string = "An apple a day keeps the doctor away"
-console.log(example1.replaceAll("a", "*"));
+let example1:string = "An apple a day keeps the doctor away"
+let resultcode = example1.replaceAll("a", "*").replaceAll("A", "*");
+
+console.log(resultcode);
 
 //pertanyaan nya, kalau ada huruf besar, gimana jadinya?? coba nnti jadiin 
 
