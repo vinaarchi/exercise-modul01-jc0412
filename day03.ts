@@ -49,8 +49,7 @@ for (let i = panjangKata.length - 1; i >= 0; i--){
 if (isPalindrome === panjangKata){
     console.log(` ${panjangKata} is a palindrome`);
 }else{
-    console.log(` ${panjangKata} is not a palindrome`);
-    
+    console.log(` ${panjangKata} is not a palindrome`); 
 }
 
 
@@ -66,18 +65,12 @@ console.log(
     `${_Input1}m ${_Input1 * 100}cm`, `${_Input4}km ${_Input4 * 100000}cm`
 );
 
-// coba nnti pake rumus ini
-/**
- console.log ("_Input1 =" + meter + "m");
- console.log ("_Input2 =" + meter + "km");
-*/
 
 
-
-
-//no4
+//no4 // blm selesai
 // example : 1000 -> Rp. 1.000,00
 const price:string = "1000"
+
 console.log(Intl.NumberFormat().format(price));
 
 //Intl.NumberFormat() : membuat format mata uang rupiah
@@ -101,20 +94,28 @@ console.log(kata.replace ("ell", ""));
 
 
 //no6
-//Write a code to capitalize the first letter of each word in a string
-//Example : “hello world” → “Hello World”
+/*
+Write a code to capitalize the first letter of each word in a string
+Example : “hello world” → “Hello World”
+*/
+
+// input string
+let input1 :string = "hello world"
+// 
+
 
 
     
 
 
 
-//no7
-/**
- a code to swap the case of each character from string
-○ Example : ‘The QuiCk BrOwN Fox’ -> ‘ tHE qUIcK bRoWn fOX’
+//no7 //belum selsai
+//a code to swap the case of each character from string
+//Example : ‘The QuiCk BrOwN Fox’ -> ‘ tHE qUIcK bRoWn fOX’
 
- */
+
+
+
 
 
 
@@ -132,7 +133,7 @@ console.log(_result);
 
 
 
-//no9
+//no9 //belum selsai
 /**
  Write a conditional statement to sort three numbers
 ○ Example : num1 = 42, num2 = 27, num3 = 18 → 18, 27, 42
@@ -152,7 +153,7 @@ let result:number = "";
 
 
 
-//no10
+//no10 / mau coba cari pake if else
 // write a code that shows 1 if the input is a string, 2 if the input is a number, and 3 for others data type
 
 //let input:string = 1
@@ -185,7 +186,7 @@ switch(input){
 
 
 
-//no11
+//no11 / belum selsai
 //write a code to change every letter a into * from a string of input
 //example : An apple a day keeps the doctor away -> *n *pple * d*y keeps the doctor *w*y
 
