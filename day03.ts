@@ -10,6 +10,9 @@ for (let i = 0; i <= 10; i++){
     console.log(`${numbers} x ${i} = ${numbers * i}`);
 }
 
+
+
+
 /* 
 hrusnya untuk perkalian tabel, itu hrus tentukan dlu angka pasti, lalu tentukan juga angka limit yang akan di kalikan
 setelah itu pakai console.log(`${numbers} x ${i} = ${numbers * i}`)
@@ -21,23 +24,9 @@ setelah itu pakai console.log(`${numbers} x ${i} = ${numbers * i}`)
 //no2
 // (a code to check whther a string is a palindrome or not.) 
 //example : 'madam' -> palindrome
+// salah nulis cara, dibenerin lgi nnti
 let input2 = ("Enter String")
 let input3 = ""
-
-for (i in input2){
-    input3 = i + input2
-    console.log("input2;", input3);
-}
-
-
-if (input2 == input3){
-    console.log("is palindrome");
-}else{
-    console.log("is not palindrome");
-}
-
-console.log((input2 == input3 ? "is palindrome" : "is not palindrome"));
-// masih bimbang antara bener atauu ngga
 
 
 
