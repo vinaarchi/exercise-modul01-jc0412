@@ -1,5 +1,7 @@
 // exercise day03
 
+
+
 //no1
 //karena udah diketahui code displaynya 
 
@@ -67,14 +69,11 @@ console.log(
 
 
 
-//no4 // blm selesai
+//no4 // blm selesai 
 //a code to format number as currency (IDR)
 // example : 1000 -> Rp. 1.000,00
 let price = "1000";
-let result1 = price.toLocaleString 
-
-
-//console.log(Intl.NumberFormat().format(price));
+ console.log(Intl.NumberFormat().format(price));
 
 //Intl.NumberFormat() : membuat format mata uang rupiah
 // ini masih kurang Rp sama ,00
@@ -156,24 +155,26 @@ let result:number = "";
 
 
 
-//no10 / mau coba cari pake if else
+//no10 /masih belum work, kayaknya ada yang salah untuk if
 // write a code that shows 1 if the input is a string, 2 if the input is a number, and 3 for others data type
 
 //let input:string = 1
 //let _input:number = 2
 
-/*if (input = 1){
-    console.log(`${input} is a string`);   
-}else if (input = 2){
-    console.log(`${input} is a number`);
+let contohinput = "1";
+
+if (contohinput = "1"){
+    console.log(`${contohinput} is a string`);
+}else if(contohinput = "2"){
+    console.log(`${contohinput} is a number`);
 }else{
-    console.log(`${input} is a null`);
-    
+    console.log(`${contohinput} is a null`);
 }
-*/
+
+
 
 // coba pakee switch
-let input = "1"
+let input = "1";
 
 switch(input){
     case "1":
