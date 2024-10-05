@@ -175,7 +175,7 @@ console.log(_result);
 
 
 
-//no9 //belum selsai
+//no9 
 /**
  Write a conditional statement to sort three numbers
 ○ Example : num1 = 42, num2 = 27, num3 = 18 → 18, 27, 42
