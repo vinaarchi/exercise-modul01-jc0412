@@ -195,46 +195,9 @@ if (resultNumMax > num1 && num1 > resultNumMin){
     console.log(`${resultNumMin}, ${num1}, ${resultNumMax}`);
 }else if( resultNumMax > num2 && num2 > resultNumMin){
     console.log(`${resultNumMin}, ${num2}, ${resultNumMax}`);
-}else (resultNumMax > num3 && num3 > resultNumMin){
+}else (resultNumMax > num3 && num3 > resultNumMin) ;{
     console.log(resultNumMax > num3 && num3 > resultNumMin);
 }
-
-
-
-/* 
-// cari min 
-if (num1 <= num2 && num1 <= num3){
-    min = num1;
-}else if (num2 <= num1 && num2 <= num3){
-    min = num2;
-}else{
-    min = num3;
-}
-
-// cari max
-if (num1 >= num2 && num1 >= num3) {
-    max = num1;
-} else if (num2 >= num1 && num2 >= num3) {
-    max = num2;
-} else {
-    max = num3;
-}
-
-// cari mid
-if ((num1 >= min && num1 <= max)) {
-    mid = num1;
-} else if ((num2 >= min && num2 <= max)) {
-    mid = num2;
-} else {
-    mid = num3;
-}
-
-console.log(min, mid, max);
-*/
-
-
-
-
 
 
 
