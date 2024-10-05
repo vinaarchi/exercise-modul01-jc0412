@@ -69,14 +69,26 @@ console.log(
 
 
 
-//no4 // blm selesai 
+//no4
 //a code to format number as currency (IDR)
 // example : 1000 -> Rp. 1.000,00
 let price = "1000";
- console.log(Intl.NumberFormat().format(price));
+let Rp = Intl.NumberFormat( "id-ID", { // id = kode bahasa, ID = kode negara
+    style: 'currency', 
+    currency: 'IDR'
+})
+console.log(`${Rp.format(price)}`);
 
 //Intl.NumberFormat() : membuat format mata uang rupiah
-// ini masih kurang Rp sama ,00
+/* 
+untuk style ada 3 macam, 
+decimal : untuk memformat angka biasa
+currency : format mata uang yang digunakan sekarang
+percent : format persen
+
+dan untuk currency itu menentukan mata uang apa yang akan dikembalikan
+IDR = Rupiah, USD = dollar, Eur = mata uang euro
+*/
 
 
 
@@ -95,15 +107,20 @@ console.log(kata.replace ("ell", ""));
 
 
 
-//no6
+//no6//belum selesai
 /*
 Write a code to capitalize the first letter of each word in a string
 Example : “hello world” → “Hello World”
 */
 
-// input string
-let input1 :string = "hello world"
-// 
+//input = hello world
+// process
+let teks :string = "hello world"
+
+
+// output = "Hello World"
+
+
 
 
 
