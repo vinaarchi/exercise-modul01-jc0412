@@ -72,7 +72,7 @@ console.log(
 //no4
 //a code to format number as currency (IDR)
 // example : 1000 -> Rp. 1.000,00
-let price = "1000";
+let price = 1000;
 let Rp = Intl.NumberFormat( "id-ID", { // id = kode bahasa, ID = kode negara
     style: 'currency', 
     currency: 'IDR'
@@ -107,7 +107,7 @@ console.log(kata.replace ("ell", ""));
 
 
 
-//no6//belum selesai
+//no6
 /*
 Write a code to capitalize the first letter of each word in a string
 Example : “hello world” → “Hello World”
@@ -116,6 +116,21 @@ Example : “hello world” → “Hello World”
 //input = hello world
 // process
 let teks :string = "hello world"
+let resultTeks = "";
+
+let cap = teks.charAt(0).toUpperCase() + teks.slice (1); // ini cuma buat uppercase huruf di depannya aja
+console.log(cap);
+
+for (let i = 0; i < teks.length; i++){
+    if (i === 0 || teks.charAt(i-1) === " " ) {
+        // karakter yang sesudah spasi akan dihitung sebagai huruf pertama dalam kata baru, sehingga akan diubah menjadi huruf besar
+        // jangan lupa untuk beri spasi di dalam kutip, karena jika tidak ada, sebelum kata "world" tidak akan di hitung sebagain huruf pertama dalam kata baru
+        resultTeks += teks[i].toUpperCase();
+    }else{
+        resultTeks += teks[i].toLowerCase();
+    }
+}
+console.log(resultTeks);
 
 
 // output = "Hello World"
@@ -123,17 +138,25 @@ let teks :string = "hello world"
 
 
 
-
-    
-
-
-
-//no7 //belum selsai
+//no7 
 //a code to swap the case of each character from string
 //Example : ‘The QuiCk BrOwN Fox’ -> ‘ tHE qUIcK bRoWn fOX’
 
 
+// input The QuiCk BrOwN Fox
+// PROCESS :
+let newInput = "The QuiCk BrOwN Fox"
+let newText = "";
 
+for (let i = 0; i < newInput.length; i++){ 
+    if (newInput[i] === newInput[i].toUpperCase()){ // mengubah karakter yang diambil menjadi huruf besar.
+        newText += newInput [i].toLowerCase(); //jika newInput huruf besar, dia akan diubah menjadi huruf kecil
+    }else{
+        newText += newInput [i].toUpperCase(); // sebaliknya jika newInput huruf kecil, dia akan diubah menjadi huruf besar
+    }
+}
+console.log(newText);
+// output tHE qUIcK bRoWn fOX
 
 
 
@@ -164,7 +187,50 @@ a<b b<c, a<b c<b, dst
 let num1: number = 42;
 let num2: number = 27;
 let num3: number = 18;
-let result:number = "";
+
+const resultNumMax = Math.max (num1, num2, num3)
+const resultNumMin = Math.min (num1, num2, num3)
+
+if (resultNumMax > num1 && num1 > resultNumMin){
+    console.log(`${resultNumMin}, ${num1}, ${resultNumMax}`);
+}else if( resultNumMax > num2 && num2 > resultNumMin){
+    console.log(`${resultNumMin}, ${num2}, ${resultNumMax}`);
+}else (resultNumMax > num3 && num3 > resultNumMin){
+    console.log(resultNumMax > num3 && num3 > resultNumMin);
+}
+
+
+
+/* 
+// cari min 
+if (num1 <= num2 && num1 <= num3){
+    min = num1;
+}else if (num2 <= num1 && num2 <= num3){
+    min = num2;
+}else{
+    min = num3;
+}
+
+// cari max
+if (num1 >= num2 && num1 >= num3) {
+    max = num1;
+} else if (num2 >= num1 && num2 >= num3) {
+    max = num2;
+} else {
+    max = num3;
+}
+
+// cari mid
+if ((num1 >= min && num1 <= max)) {
+    mid = num1;
+} else if ((num2 >= min && num2 <= max)) {
+    mid = num2;
+} else {
+    mid = num3;
+}
+
+console.log(min, mid, max);
+*/
 
 
 
