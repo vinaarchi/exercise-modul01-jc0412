@@ -5,7 +5,20 @@
 create a function that can create a triangle pattern according to the height we provide the following
 parameters : height > triangle height
 */
+function segitigaPattern (n: number) {
+    let message = "";
+    let temp = 1;
 
+    for (let i = 1; i <=n; i++){
+        for (let j = 1; i<=n; i++){
+            message += temp < 10 ? `0${temp}` : `${temp}`;
+            temp++;
+        }
+        message += "\n";
+    }
+
+    return message;
+}
 
 
 
@@ -19,24 +32,24 @@ Parameters : n -> total looping
 */
 // multiple 3 = fizz. multiple 5 = buzz. multiple 3*5 = fizzbuzz
 
-function loopNumber(n){
-    let result1 = []
-    for (let i = 0; i <= n; i++ )
-        if (i % 3 === 0 && i % 5 === 0){
-            result1.push("FizzBuzz");
-        }else if(i % 3 === 0){
-            result1.push("Fizz");
-        }else if(i % 5 === 0){
-            result1.push("Buzz");
+function loopNumber(n: number){
+    let result1:string = " ";
+    for (let i = 1; i <= n; i++ )
+
+        if (i % 3 === 0 && i % 5 === 0) { // untuk penempatan posisi jika ini ditaruh di else if, tidak akan terbaca
+            result1 += "FizzBuzz";
+        }else if(i % 3 === 0) {
+            result1 += "Fizz";
+        }else if(i % 5 === 0) {
+            result1 += "Buzz";
         }else{
-            result1.push(i)
+            result1 += i
     }
     return result1;
 }
 
-let n = 15;
-let result1 = loopNumber(n);
-console.log(result1);
+console.log((loopNumber(15)));
+
 
 
 //03
@@ -51,12 +64,24 @@ function to calculate Body Mass Index (BMI)
 ○ 30.0 - 39.9 return “very overweight”
 ○ > 39.9 return “obesity”z
 */
+function toWeight(weight: number, height: number) {
+   const bmi = weight / Math.pow(height,2);
 
-function calculateBMI (height){
-   
-    
+   if (bmi < 18.5){
+    return "less weight";
+   }else if (bmi > 18.4 && bmi < 25){
+    return "ideal";
+   }else if (bmi >25 && bmi < 29.9){
+    return "overweight";
+   }else if (bmi > 29.9 && bmi < 40){
+    return "very overweight";
+   }else{
+    return "obesity"
+   }
 }
- 
+
+console.log(toWeight (55,1.67));
+
 
 
 
@@ -71,8 +96,8 @@ numbers only
 
 
 // process
-function removeOdd(values){
-    let result = []; // pake [] karena mendeklarasikan result sebagai array
+function removeOdd(values: number[]){
+    let result: number [] = []; // pake [] karena mendeklarasikan result sebagai array
     for (let i = 0; i < values.length; i++){
         if (values[i] % 2 === 0){
         result.push(values[i]);
