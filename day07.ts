@@ -81,18 +81,18 @@ ArrayResult → [
 
  */
 // TIDAK DISARANKAN PAKAI FOR OF, karena FOR OF hanya butuh value.
-const arr1 = [
+const _arr1 = [
     { name: "Student 1", email : "student1@mail.com" },
     { name: "Student 2", email : "student2@mail.com" }
     ];
 
-const arr2 = [
+const _arr2 = [
     { name: "Student 1", email : "student1@mail.com" },
     { name: "Student 3", email : "student3@mail.com" }
     ];
 
 // untuk menggabungkan arr1 dan arr2 menggunakan spread operator
-const mergedArr = [...arr1,...arr2];
+const mergedArr = [..._arr1,..._arr2];
 
 // function untuk menghapus duplikat
 function mergeArr (arr:any){
@@ -108,6 +108,47 @@ function mergeArr (arr:any){
  const resultStudent = mergeArr(mergedArr)
  console.log(resultStudent);
  
+// jawaban dari pak abdi
+/*
+let a = [
+    { name: "Student 1", email : "student1@mail.com" },
+    { name: "Student 2", email : "student2@mail.com" }
+];
+
+let b = [
+    { name: "Student 1", email : "student1@mail.com" },
+    { name: "Student 3", email : "student3@mail.com" }
+];
+
+const mergeArr = (dataA: any, dataB: any) => {
+    const result = [];
+    const tempMerge = [...dataA, ...dataB];
+    for (let index = 0; index < tempMerge.length; index++){
+        let isExist = false;
+
+
+    // FOR CHECK EXISTING VALUE IN result variable
+        for (let resultIndex = 0; resultIndex < result.length; resultIndex++){
+        // jika data dari tempMerge[index] tidak ada didalam variable array
+        // maka data tersebut saya push ke variable result
+        if(tempMerge[index].email === result[resultIndex].email){
+            isExist = true;
+            break;
+            }
+        }
+        if (!isExist){
+        result.push(tempMerge[index]);
+        }
+    }
+
+    return result;
+};
+
+console.log(mergeArr(a, b));
+
+
+*/
+
 
  
 //4 a function that can accept input as an array of objects and switch all values into property and property into value
@@ -135,7 +176,7 @@ const arrayBalik = switchObject(arrayInput);
 console.log(arrayBalik);
 
 
-//COBA PAKAI FOR IN
+
 
 
 
