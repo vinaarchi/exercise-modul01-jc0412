@@ -66,7 +66,7 @@ console.log(students);
 
 
 function calculateStudent (students){
-    if (students.length === 0);
+    if(students.length === 0);
 
     let totalScore = 0;
     let totalAge = 0;
@@ -132,11 +132,6 @@ console.log(calculateStudent(students));
 ○ Checkout method → Finalize transaction, return transaction data
 */
 
-class Product{
-    name:string;
-    price:string;
-}
-class Transaction {
-    product: 
-}
+
+
 

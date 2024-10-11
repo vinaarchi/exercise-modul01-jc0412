@@ -47,7 +47,7 @@ const _years = Math.floor(_daysInput / 365);
 const _months = Math.floor((_daysInput % 365) / 30);
 const _days = Math.floor((_daysInput % 365) % 30);
 console.log(
-    `${_daysInput} days -> ${_years} year, ${_months} month, ${_days} day`
+    `${_daysInput} days -> ${_years} year, ${_months} month, ${_days} day`)
 
 //6
 const _date1 = new Date("2022-01-20");

@@ -29,6 +29,20 @@ function joinNames(names: string[]){
 console.log(joinNames(fruitNames));
 
 
+/* jawaban dari kabryan
+function joinWords(words: string[]){
+    let result = "";
+    for ( let i = 0; i < words.length; i++){
+    if(i === words.length - 1){
+        result += "and" + words[i];
+    }else{
+        result += words[i] + ", ";
+    }
+  }
+}
+*/
+
+
 
 /*
 3. a function from a given array of numbers and return the second smallest number
@@ -42,6 +56,17 @@ let num1 = [5, 3, 1, 7, 2, 6]
 of the same length.
 a. Example : [1, 2, 3] + [3, 2, 1] → [4, 4, 4]
 */
+
+function calculateArray(array1: number[], array2: number[]){
+    let element = [];
+    for (let index = 0; index < array1.length; index++){
+        element.push(array1[index] + array2[index])
+    }
+}
+
+let array1 : [1, 2, 3];
+let array2 : [3, 2, 1];
+console.log(calculateArray(array1, array2));
 
 
 
